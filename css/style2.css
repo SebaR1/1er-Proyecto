@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400;1,500&display=swap);
+body {
+  font-family: "Raleway", sans-serif !important;
+  background: -webkit-gradient(linear, left top, right top, from(#f57299), to(#fab0c5));
+  background: linear-gradient(to right, #f57299, #fab0c5);
+}
+
+.principal {
+  color: #135f79;
+  font-style: italic;
+  font-weight: 600 !important;
+}
+
+.principal2 {
+  display: inline-block;
+  color: black !important;
+  font-weight: 400 !important;
+}
+
+#cards img {
+  width: 100%;
+  height: 250px;
+}
+
+#cards .card {
+  margin: 10px;
+  background: #eca2a2;
+}
+
+#gallery img {
+  width: 100%;
+  height: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 5px solid black;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.bg-salmon {
+  background: -webkit-gradient(linear, left top, right top, from(#fc8fb0), to(#fab0c5));
+  background: linear-gradient(to right, #fc8fb0, #fab0c5);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#navmenu li a {
+  color: rgba(255, 255, 255, 0.863);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  text-shadow: 10px 10px 10px #422b2b;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style2.css.map */

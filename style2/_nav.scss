@@ -1,0 +1,13 @@
+.bg-salmon {
+  background: linear-gradient(to right, #fc8fb0, #fab0c5);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#navmenu li a {
+  color: rgba(255, 255, 255, 0.863);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  text-shadow: 10px 10px 10px #422b2b;
+  font-weight: 500;
+}
