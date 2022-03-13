@@ -17,6 +17,52 @@ body {
   font-weight: 400 !important;
 }
 
+/*Header*/
+.bg-salmon {
+  background: -webkit-gradient(linear, left top, right top, from(#fc8fb0), to(#fab0c5));
+  background: linear-gradient(to right, #fc8fb0, #fab0c5);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#navmenu li a {
+  color: rgba(255, 255, 255, 0.863);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  text-shadow: 10px 10px 10px #422b2b;
+  font-weight: 500;
+}
+
+.slidetoright {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 45%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 45%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 #cards img {
   width: 100%;
   height: 250px;
@@ -36,21 +82,5 @@ body {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-}
-
-.bg-salmon {
-  background: -webkit-gradient(linear, left top, right top, from(#fc8fb0), to(#fab0c5));
-  background: linear-gradient(to right, #fc8fb0, #fab0c5);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-
-#navmenu li a {
-  color: rgba(255, 255, 255, 0.863);
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 2rem;
-  text-shadow: 10px 10px 10px #422b2b;
-  font-weight: 500;
 }
 /*# sourceMappingURL=style2.css.map */
