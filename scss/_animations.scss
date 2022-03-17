@@ -14,3 +14,11 @@
     width: 100%;
   }
 }
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
