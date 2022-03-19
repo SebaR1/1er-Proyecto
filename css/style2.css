@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400;1,500&display=swap);
 body {
   font-family: "Raleway", sans-serif !important;
+  background: -webkit-gradient(linear, left top, right top, from(#f57299), to(#fab0c5));
   background: linear-gradient(to right, #f57299, #fab0c5);
 }
 
@@ -10,22 +11,37 @@ body {
 
 /*Header*/
 .bg-salmon {
+  background: -webkit-gradient(linear, left top, right top, from(#fc8fb0), to(#fab0c5));
   background: linear-gradient(to right, #fc8fb0, #fab0c5);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 #navmenu li a {
   color: rgba(255, 255, 255, 0.863);
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 1.75rem;
   text-shadow: 10px 10px 10px #422b2b;
   font-weight: 500;
 }
 
 .slidetoright {
-  animation-duration: 2s;
-  animation-name: slidein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 45%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 @keyframes slidein {
@@ -38,12 +54,17 @@ body {
     width: 100%;
   }
 }
+
 .zoom {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .zoom:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 #cards img {
@@ -63,7 +84,8 @@ body {
   height: 300px;
   margin: 5px;
   border-radius: 2px;
-  align-self: stretch;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
-
 /*# sourceMappingURL=style2.css.map */
